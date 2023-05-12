@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultra.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/template}">
+<th:block layout:fragment="content">
 <div id="main">
     <div class="mt-5">
         <i class="fa-solid fa-pen-to-square fa-regular fa-images fa-2xl "></i> 갤러리 </i>
@@ -7,6 +10,6 @@
     </div>
 
 </div>
-
+</th:block>
 <script src="/assets/js/gallery.js"></script>
 </html>
