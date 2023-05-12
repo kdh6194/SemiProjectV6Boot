@@ -1,6 +1,6 @@
-package honeybee.springboot.semiprojectv6boot.dao;
+package honeybee.springboot.semiprojectv6.dao;
 
-import honeybee.project.semiprojectv5.model.Board;
+import honeybee.springboot.semiprojectv6.model.Board;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

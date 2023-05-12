@@ -1,4 +1,4 @@
-package honeybee.springboot.semiprojectv6boot.model;
+package honeybee.springboot.semiprojectv6.model;
 
 import lombok.Data;
 

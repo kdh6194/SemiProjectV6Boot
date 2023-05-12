@@ -1,7 +1,7 @@
-package honeybee.springboot.semiprojectv6boot.controller;
+package honeybee.springboot.semiprojectv6.controller;
 
-import honeybee.project.semiprojectv5.model.Member;
-import honeybee.project.semiprojectv5.service.JoinService;
+import honeybee.springboot.semiprojectv6.model.Member;
+import honeybee.springboot.semiprojectv6.service.JoinService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,25 +20,25 @@ public class JoinController {
 
     @GetMapping("/agree")
     public String agree() {
-        return "join/agree.tiles";
+        return "join/agree";
     }
     @GetMapping("/checkme")
     public String checkme() {
-        return "join/checkme.tiles";
+        return "join/checkme";
     }
     @PostMapping("/joinme")
     public ModelAndView joinme(Member mb) {
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("join/joinme.tiles");
+        mv.setViewName("join/joinme");
         mv.addObject("mb",mb);
         return mv;
     }
     @PostMapping("/joinok")
     public String joinok(Member m, String grecaptcha) {
-        String view = "/error.tiles";
+        String view = "/error";
 
         if (jnsrv.newMember(m)) {
-            view = "join/joinok.tiles";
+            view = "join/joinok";
 
         }
         return view;

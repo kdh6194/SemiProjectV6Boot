@@ -1,9 +1,9 @@
-package honeybee.springboot.semiprojectv6boot.service;
+package honeybee.springboot.semiprojectv6.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import honeybee.project.semiprojectv5.dao.JoinDAO;
-import honeybee.project.semiprojectv5.model.Member;
+import honeybee.springboot.semiprojectv6.dao.JoinDAO;
+import honeybee.springboot.semiprojectv6.model.Member;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

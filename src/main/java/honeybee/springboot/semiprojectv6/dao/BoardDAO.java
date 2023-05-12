@@ -1,7 +1,7 @@
-package honeybee.springboot.semiprojectv6boot.dao;
+package honeybee.springboot.semiprojectv6.dao;
 
 
-import honeybee.project.semiprojectv5.model.Board;
+import honeybee.springboot.semiprojectv6.model.Board;
 
 import java.util.List;
 import java.util.Map;

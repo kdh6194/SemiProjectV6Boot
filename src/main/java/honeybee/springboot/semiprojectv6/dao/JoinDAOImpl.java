@@ -1,7 +1,7 @@
-package honeybee.springboot.semiprojectv6boot.dao;
+package honeybee.springboot.semiprojectv6.dao;
 
-import honeybee.project.semiprojectv5.model.Member;
-import honeybee.project.semiprojectv5.model.Zipcode;
+import honeybee.springboot.semiprojectv6.model.Member;
+import honeybee.springboot.semiprojectv6.model.Zipcode;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

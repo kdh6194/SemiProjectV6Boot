@@ -1,7 +1,7 @@
-package honeybee.springboot.semiprojectv6boot.controller;
+package honeybee.springboot.semiprojectv6.controller;
 
-import honeybee.project.semiprojectv5.model.Board;
-import honeybee.project.semiprojectv5.service.BoardService;
+import honeybee.springboot.semiprojectv6.model.Board;
+import honeybee.springboot.semiprojectv6.service.BoardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +18,7 @@ public class BoardController {
     @GetMapping("/list")
     public ModelAndView list(int cpg) {
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("board/list.tiles");
+        mv.setViewName("board/list");
         mv.addObject("bd", bsrv.showBoard(cpg));
         mv.addObject("cpg", cpg);
         mv.addObject("stpg", ((cpg - 1) / 10) * 10 + 1);
@@ -30,7 +30,7 @@ public class BoardController {
     public ModelAndView find(int cpg, String ftype, String fkey) {
         ModelAndView mv = new ModelAndView();
 
-        mv.setViewName("board/list.tiles");
+        mv.setViewName("board/list");
         mv.addObject("bd", bsrv.showBoard(cpg, ftype, fkey));
         mv.addObject("cpg", cpg);
         mv.addObject("stpg", ((cpg - 1) / 10) * 10 + 1);
@@ -41,12 +41,12 @@ public class BoardController {
 
     @GetMapping("/write")
     public String write() {
-        return "board/write.tiles";
+        return "board/write";
     }
 
     @PostMapping("/write")
     public String writeok(Board b) {
-        String view = "error.tiles";
+        String view = "error";
 
         if (bsrv.newBoard(b)) {
             view = "redirect:/board/list?cpg=1";
@@ -60,7 +60,7 @@ public class BoardController {
 
         ModelAndView mv = new ModelAndView();
         mv.addObject("bd", bsrv.readOneBoard(bno));
-        mv.setViewName("board/view.tiles");
+        mv.setViewName("board/view");
 
         return mv;
 
