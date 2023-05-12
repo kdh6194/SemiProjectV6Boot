@@ -205,7 +205,7 @@ go2index?.addEventListener('click',()=>{
 
 //---------------------------------login
 const loginbtn = document.querySelector("#loginbtn");
-const logoutbtn = document.querySelector("#logfindbtn");
+const logoutbtn = document.querySelector("#logoutbtn");
 const lgfrm = document.forms.lgnfrm;
 
 loginbtn?.addEventListener('click',()=>{
