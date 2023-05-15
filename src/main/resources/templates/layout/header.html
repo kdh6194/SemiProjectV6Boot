@@ -16,6 +16,21 @@
             </div>
         </header>
 
+<!--        강사님이 작성하신 코드-->
+<!--        <div class="col text-end" th:with="path=${#request.getRequestURI()}">-->
+<!--            <th:block th:if="${not #strings.startsWith(path, '/join')}">-->
+<!--                <th:block th:if="${#strings.isEmpty(session.UID)}">-->
+<!--                    <button type="button" class="btn btn-danger mt-2"-->
+<!--                            data-bs-target="#loginfrm" data-bs-toggle="modal">로그인</button>-->
+<!--                    <button type="button" class="btn btn-primary mt-2">회원가입</button>-->
+<!--                </th:block>-->
+<!--                <th:block th:if="${not #strings.isEmpty(session.UID)}">-->
+<!--                    <button type="button" class="btn btn-dark mt-2" id="lgoutbtn">로그아웃</button>-->
+<!--                    <button type="button" class="btn btn-success mt-2">회원정보</button>-->
+<!--                </th:block>-->
+<!--            </th:block>-->
+
+
         <nav class="navbar navbar-expand navbar-dark bg-dark">
             <ul class="navbar-nav nav-fill w-100">
                 <li class="nav-item">
